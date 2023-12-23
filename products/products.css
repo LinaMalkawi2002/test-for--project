@@ -1,0 +1,84 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+.heading h1 {
+    text-align:center; font-size:50px; text-transform:uppercase; color:#222; letter-spacing:1px;
+    font-family:"Playfair Display", serif; font-weight:400;
+}
+.heading h1 span {
+    margin-top: 5px;
+    font-size:15px; color:#444; word-spacing:1px; font-weight:normal; letter-spacing:2px;
+    text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:500;
+
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.heading h1 span:after,.heading h1 span:before {
+    content: " ";
+    display: block;
+    
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+}
+
+.category {
+    width: 300px;
+    padding: 40px;
+    margin: 15px;
+    background: linear-gradient(to right, #fffeff, #f7f6f9);
+    color: #6a5d9b;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    font-size: 1.2em;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.category img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.category:hover {
+    background: linear-gradient(to right, #cbb7d3, #a18bbe);
+    transform: scale(1.05);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.category:hover img {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #cbb7d3, #a18bbe);
+    color: #fff;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+}
